@@ -87,7 +87,7 @@ scc_fnc_spawnItem = {
 		} else {
 			
 			_itemBox = createVehicle ["WeaponHolderSimulated", _itemLoc, [], 0, "CAN_COLLIDE"];
-			_itemBox enableSimulation false;
+			_itemBox enableSimulation true;  //Unable to pick up items if "false"
 			
 			_itemLoc set [2,(_itemLoc select 2) + 1];			
 			_itemBox setVehiclePosition [_itemLoc, [], 0, "CAN_COLLIDE"]
